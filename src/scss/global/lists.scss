@@ -1,0 +1,32 @@
+ul,
+ol {
+	margin: 0 0 20px 0;
+	padding: 0 0 0 20px;
+	ul,
+	ol {
+		padding: 0 0 0 20px;
+	}
+}
+
+dl {
+	margin: 0;
+}
+
+dt {
+	font-weight: 600;
+	margin: 0;
+}
+
+dd {
+	margin: 0;
+}
+
+// Remove default summary arrows for accordions
+// summary {
+//   list-style-image: none;
+// }
+// summary::-webkit-details-marker {
+//   display: none;
+//   background: none;
+//   color: transparent;
+// }
