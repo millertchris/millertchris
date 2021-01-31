@@ -46,4 +46,55 @@
             
             }
         }
+
+        static function register_hero_block() {
+
+            if ( function_exists( 'acf_register_block_type' ) ) {
+
+                // Register Hero block
+                acf_register_block_type( array(
+                    'name' 					=> 'hero',
+                    'title' 				=> __( 'Hero' ),
+                    'description' 			=> __( 'A custom Hero block.' ),
+                    'category' 				=> 'formatting',
+                    'icon'					=> 'layout',
+                    'keywords'				=> array( 'hero' ),
+                    'post_types'			=> array( 'post', 'page' ),
+                    'mode'					=> 'auto',
+                    // 'align'				=> 'wide',
+                    'render_template'		=> 'template-parts/blocks/hero.php',
+                    // 'render_callback'	=> 'hero_block_render_callback',
+                    // 'enqueue_style' 		=> get_template_directory_uri() . '/template-parts/blocks/hero/hero.css',
+                    // 'enqueue_script' 	=> get_template_directory_uri() . '/template-parts/blocks/hero/hero.js',
+                    // 'enqueue_assets' 	=> 'hero_block_enqueue_assets',
+                ));
+
+            }
+        }
+
+        static function register_listing_block() {
+
+            if ( function_exists( 'acf_register_block_type' ) ) {
+
+                // Register Listing block
+                acf_register_block_type( array(
+                    'name' 					=> 'listing',
+                    'title' 				=> __( 'Listing' ),
+                    'description' 			=> __( 'A custom Listing block.' ),
+                    'category' 				=> 'formatting',
+                    'icon'					=> 'layout',
+                    'keywords'				=> array( 'listing' ),
+                    'post_types'			=> array( 'post', 'page' ),
+                    'mode'					=> 'auto',
+                    // 'align'				=> 'wide',
+                    'render_template'		=> 'template-parts/blocks/listing.php',
+                    // 'render_callback'	=> 'listing_block_render_callback',
+                    // 'enqueue_style' 		=> get_template_directory_uri() . '/template-parts/blocks/listing/listing.css',
+                    // 'enqueue_script' 	=> get_template_directory_uri() . '/template-parts/blocks/listing/listing.js',
+                    // 'enqueue_assets' 	=> 'listing_block_enqueue_assets',
+                ));
+
+            }
+
+        }
     }

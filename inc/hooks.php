@@ -22,8 +22,11 @@
     WP_Boilerplate::add_sidebar();
 
     //======================================================================
-    // ACF FILTERS
+    // ACF
     //======================================================================
+    add_action( 'acf/init', 'WP_Boilerplate_ACF::register_hero_block' );
+    add_action( 'acf/init', 'WP_Boilerplate_ACF::register_listing_block' );
+
     add_filter('acf/settings/remove_wp_meta_box', '__return_true');
     add_filter('acf/settings/save_json', 'WP_Boilerplate_ACF::json_save_folder');
     add_filter('acf/settings/load_json', 'WP_Boilerplate_ACF::json_load_folder');
