@@ -17,6 +17,17 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
+	background: rgba(255, 255, 255, 0);
+	backdrop-filter: blur(10px);
+	transform: translateY(0);
+	z-index: 10;
+	transition: 300ms all ease-in-out;
+	&.hide {
+		transform: translateY(-100px);
+	}
+	&.bg {
+		background: rgba(255, 255, 255, 0.5);
+	}
 	.wrapper {
 		max-width: none;
 	}

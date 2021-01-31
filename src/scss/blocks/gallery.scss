@@ -4,9 +4,10 @@
 		margin: auto;
 	}
 	.item {
-		width: 340px;
+		width: 100%;
+		max-width: 340px;
 		@media screen and (max-width: 768px) {
-			width: 240px;
+			max-width: 240px;
 		}
 	}
 	img {

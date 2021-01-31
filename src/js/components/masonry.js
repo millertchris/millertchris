@@ -10,6 +10,7 @@ export default function masonry() {
 	const sizes = [
 		{ mq: "320px", columns: 1, gutter: 10 },
 		{ mq: "540px", columns: 2, gutter: 10 },
+		{ mq: "768px", columns: 2, gutter: 10 },
 		{ mq: "1080px", columns: 3, gutter: 10 },
 	];
 
@@ -36,12 +37,21 @@ export default function masonry() {
 	).then(() => {
 		gallery.forEach((items, i) => {
 			initGallery[i].pack();
+			initGallery[i].resize(true);
 		});
 	});
 
-	window.addEventListener("resize", function () {
-		gallery.forEach((items, i) => {
-			initGallery[i].pack();
+	gallery.forEach((items, i) => {
+		initGallery[i].on("resize", (size) => {
+			// 'size' is the newly matching size object
+			// ...
+			console.log(size);
 		});
 	});
+
+	// window.addEventListener("resize", function () {
+	// 	gallery.forEach((items, i) => {
+	// 		initGallery[i].pack();
+	// 	});
+	// });
 }
