@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
-
 // Paths
 $img-path: "../../static/";
 
 // Type
-$base-font-family: "Lato", sans-serif;
-$heading-font-family: "Lato", sans-serif;
+$base-font-family: "Poppins", sans-serif;
+$heading-font-family: "Poppins", sans-serif;
 
 // Font Size
 $base-font-size: 18px;
@@ -18,11 +16,11 @@ $base-line-height: 1.84;
 $heading-line-height: 1;
 
 // Font Weight
-$base-font-weight: 400;
+$base-font-weight: 500;
 $heading-font-weight: 900;
 
 // Other Sizes
-$site-width: 1200px;
+$site-width: 1080px;
 $bottom-margin: 100px;
 $base-border-radius: 0px;
 $base-spacing: 1.5em;

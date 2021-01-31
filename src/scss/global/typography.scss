@@ -15,7 +15,7 @@ p {
 @for $index from 1 through 6 {
 	h#{$index},
 	.h#{$index} {
-		font-size: (6em / $index);
+		font-size: (4em / $index);
 		font-weight: $heading-font-weight;
 		line-height: $heading-line-height;
 		margin: 0 0 40px 0;
@@ -43,4 +43,8 @@ blockquote {
 	position: relative;
 	margin: 0;
 	padding: 0;
+}
+
+.light {
+	color: $medium-gray;
 }
