@@ -1,2 +1,9 @@
 .component.intro {
+	padding: 150px 0 50px 0;
+	margin-bottom: 50px;
+	text-align: center;
+	background: $light-gray;
+	.subtitle {
+		color: $medium-gray;
+	}
 }

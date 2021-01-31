@@ -1,2 +1,16 @@
 .block.gallery {
+	.items {
+		@include clear-list();
+		margin: auto;
+	}
+	.item {
+		width: 340px;
+		@media screen and (max-width: 768px) {
+			width: 240px;
+		}
+	}
+	img {
+		display: block;
+		object-fit: cover;
+	}
 }

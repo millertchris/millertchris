@@ -12,6 +12,7 @@
     "build": "NODE_ENV=production webpack"
   },
   "dependencies": {
+    "bricks.js": "^1.8.0",
     "css-loader": "^5.0.1",
     "file-loader": "^6.2.0",
     "lodash": "^4.17.20",
