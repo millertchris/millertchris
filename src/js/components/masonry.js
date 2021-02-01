@@ -20,7 +20,7 @@ export default function masonry() {
 			container: items, // required
 			packed: "data-packed", // required
 			sizes: sizes, // required
-			position: false, // optional
+			// position: false, // optional
 		});
 	});
 

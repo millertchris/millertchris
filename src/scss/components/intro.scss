@@ -4,8 +4,13 @@
 	padding-bottom: 50px;
 	margin-bottom: 50px;
 	text-align: center;
-	background: $light-gray;
-	.subtitle {
-		color: $medium-gray;
-	}
+}
+
+.particles {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 0;
 }

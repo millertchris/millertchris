@@ -7,6 +7,7 @@ import header from "./components/header";
 import loadScreen from "./components/load-screen";
 import vanillaTilt from "./components/vanilla-tilt";
 import darkMode from "./components/dark-mode";
+import particles from "./components/particles";
 
 document.addEventListener("DOMContentLoaded", function () {
 	// vue();
@@ -16,4 +17,5 @@ document.addEventListener("DOMContentLoaded", function () {
 	// loadScreen();
 	vanillaTilt();
 	darkMode();
+	particles();
 });
