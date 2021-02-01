@@ -48,10 +48,4 @@ export default function masonry() {
 			console.log(size);
 		});
 	});
-
-	// window.addEventListener("resize", function () {
-	// 	gallery.forEach((items, i) => {
-	// 		initGallery[i].pack();
-	// 	});
-	// });
 }

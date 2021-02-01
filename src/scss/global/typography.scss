@@ -17,6 +17,7 @@ p {
 	.h#{$index} {
 		font-size: (4em / $index);
 		font-weight: $heading-font-weight;
+		color: var(--secondary-color);
 		line-height: $heading-line-height;
 		margin: 0 0 40px 0;
 	}

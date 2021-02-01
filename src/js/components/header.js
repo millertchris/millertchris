@@ -1,11 +1,14 @@
+import _ from "lodash";
+
 export default function header() {
+	// Determine when user scrolls up or down
 	var lastScrollTop = 0;
 	var header = document.querySelector("header");
 
 	// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
 	window.addEventListener(
 		"scroll",
-		function () {
+		_.throttle(function () {
 			// or window.addEventListener("scroll"....
 			var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
 			if (st > lastScrollTop) {
@@ -23,7 +26,7 @@ export default function header() {
 			} else {
 				header.classList.remove("bg");
 			}
-		},
+		}, 300),
 		false
 	);
 }
