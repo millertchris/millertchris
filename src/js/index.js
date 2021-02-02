@@ -8,6 +8,8 @@ import loadScreen from "./components/load-screen";
 import vanillaTilt from "./components/vanilla-tilt";
 import darkMode from "./components/dark-mode";
 import particles from "./components/particles";
+import rellax from "./components/rellax";
+import aos from "./components/aos";
 
 document.addEventListener("DOMContentLoaded", function () {
 	// vue();
@@ -18,4 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	vanillaTilt();
 	darkMode();
 	particles();
+	rellax();
+	aos();
 });

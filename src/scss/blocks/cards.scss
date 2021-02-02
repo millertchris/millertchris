@@ -42,6 +42,7 @@
 	.image {
 		position: relative;
 		height: 260px;
+		transform: translateZ(10px);
 		&:before {
 			content: "";
 			position: absolute;
@@ -51,6 +52,7 @@
 			height: 100%;
 			background: #000;
 			opacity: 0.5;
+			transform: translateZ(10px);
 		}
 	}
 	img {

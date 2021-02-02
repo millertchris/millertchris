@@ -6,7 +6,20 @@
 	text-align: center;
 }
 
-.particles {
+.iphones {
+	display: flex;
+	padding: 60px 0;
+	margin-top: 100px;
+	img {
+		position: relative;
+		width: 25%;
+		&:nth-child(odd) {
+			top: 60px;
+		}
+	}
+}
+
+#particles {
 	position: absolute;
 	top: 0;
 	left: 0;
