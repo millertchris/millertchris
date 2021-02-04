@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/622c73cffb.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+		rel="stylesheet">
+	<title>Old Forester</title>
+</head>
+
+<body class="styleguide">
+		<%= require('html-loader!../components/header.html') %>
+
+		<section class="single">
+			<div class="component intro">
+				<div class="wrapper">
+					<div class="row">
+						<div class="col">
+							<h1 class="title">Old Forester</h1>
+							<h2 class="subtitle light">Have a sip.</h2>
+						</div>
+						<div class="col">
+							<div class="image">
+								<img class="rellax" data-rellax-speed="3" src="old_forester_macbook.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="block basic-content g-fade-up">
+			<div class="wrapper">
+				<div class="row">
+					<div class="col">
+						<h2>A distillery with a <span class="light">splash</span> of bourbon.</h2>
+						<p><span class="light">The task,</span> refresh the site with an emphasis on their distillery, products, and heritage. <span class="light">The challenge,</span> an extremely tight and unforgiving timeline. <span class="light">The result,</span> a beautiful site that highlights all of that.</p>
+						<a href="https://www.oldforester.com/">Visit oldforester.com</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="block gallery">
+			<div class="wrapper">
+				<div class="row">
+					<div class="col">
+						<div class="carousel">
+							<div class="carousel-cell">
+								<div class="image">
+									<img src="old_forester_whiskey_desktop_1.jpg">
+								</div>
+							</div>
+							<div class="carousel-cell">
+								<div class="image">
+									<img src="old_forester_whiskey_mobile_1.jpg">
+								</div>
+							</div>
+							<div class="carousel-cell">
+								<div class="image">
+									<img src="old_forester_whiskey_desktop_2.jpg">
+								</div>
+							</div>
+							<div class="carousel-cell">
+								<div class="image">
+									<img src="old_forester_whiskey_mobile_2.jpg">
+								</div>
+							</div>
+							<div class="carousel-cell">
+								<div class="image">
+									<img src="old_forester_whiskey_desktop_3.jpg">
+								</div>
+							</div>
+							<div class="carousel-cell">
+								<div class="image">
+									<img src="old_forester_whiskey_mobile_3.jpg">
+								</div>
+							</div>
+							<div class="carousel-cell">
+								<div class="image">
+									<img src="old_forester_whiskey_desktop_4.jpg">
+								</div>
+							</div>
+							<div class="carousel-cell">
+								<div class="image">
+									<img src="old_forester_whiskey_mobile_4.jpg">
+								</div>
+							</div>
+							<div class="carousel-cell">
+								<div class="image">
+									<img src="old_forester_whiskey_desktop_5.jpg">
+								</div>
+							</div>
+							<div class="carousel-cell">
+								<div class="image">
+									<img src="old_forester_whiskey_mobile_5.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<%= require('html-loader!../blocks/cards.html') %>
+
+		<%= require('html-loader!../components/footer.html') %>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</body>
+
+</html>

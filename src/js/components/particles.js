@@ -6,10 +6,14 @@ export default function particles() {
 	// 	color: "#000",
 	// });
 
-	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-	particlesJS.load("particles", "/particles.json", function () {
-		console.log("callback - particles.js config loaded");
-	});
+	var particleContainer = document.getElementById("particles");
+
+	if (particleContainer) {
+		/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+		particlesJS.load("particles", "/particles.json", function () {
+			console.log("callback - particles.js config loaded");
+		});
+	}
 
 	// Particles.color.value = "#fff";
 	// Particles.fn.particlesRefresh();

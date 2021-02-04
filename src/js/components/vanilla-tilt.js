@@ -7,9 +7,9 @@ export default function vanillaTilt() {
 		glare: true,
 	});
 
-	VanillaTilt.init(document.querySelectorAll(".gallery .item"), {
-		max: 10,
-		speed: 400,
-		glare: true,
-	});
+	// VanillaTilt.init(document.querySelectorAll(".gallery .item"), {
+	// 	max: 10,
+	// 	speed: 400,
+	// 	glare: true,
+	// });
 }

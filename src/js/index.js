@@ -9,7 +9,7 @@ import vanillaTilt from "./components/vanilla-tilt";
 import darkMode from "./components/dark-mode";
 import particles from "./components/particles";
 import rellax from "./components/rellax";
-import aos from "./components/aos";
+import animateScroll from "./components/gsap";
 
 document.addEventListener("DOMContentLoaded", function () {
 	// vue();
@@ -21,5 +21,5 @@ document.addEventListener("DOMContentLoaded", function () {
 	darkMode();
 	particles();
 	rellax();
-	aos();
+	animateScroll();
 });

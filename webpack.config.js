@@ -57,6 +57,11 @@ module.exports = {
 			template: "src/html/pages/single.html",
 		}),
 		new HtmlWebpackPlugin({
+			title: "Old Forester",
+			filename: "single-old-forester.html",
+			template: "src/html/pages/single-old-forester.html",
+		}),
+		new HtmlWebpackPlugin({
 			title: "404",
 			filename: "404.html",
 			template: "src/html/pages/404.html",

@@ -1,51 +1,33 @@
-import Bricks from "bricks.js";
+import Flickity from "flickity";
+import "flickity-imagesloaded";
 
 export default function masonry() {
-	// callmecavs.com/bricks.js
+	const carousels = document.querySelectorAll(".carousel");
 
-	const gallery = document.querySelectorAll(".gallery .items");
-	var initGallery = [];
-
-	// Creating breakpoints and sizes
-	const sizes = [
-		{ mq: "320px", columns: 1, gutter: 10 },
-		{ mq: "540px", columns: 2, gutter: 10 },
-		{ mq: "768px", columns: 2, gutter: 10 },
-		{ mq: "1080px", columns: 3, gutter: 10 },
-	];
-
-	gallery.forEach((items, i) => {
-		// Brick settings
-		initGallery[i] = Bricks({
-			container: items, // required
-			packed: "data-packed", // required
-			sizes: sizes, // required
-			// position: false, // optional
-		});
-	});
-
-	// Wait until all image on the page has loaded.
-	Promise.all(
-		Array.from(document.images)
-			.filter((img) => !img.complete)
-			.map(
-				(img) =>
-					new Promise((resolve) => {
-						img.onload = img.onerror = resolve;
-					})
-			)
-	).then(() => {
-		gallery.forEach((items, i) => {
-			initGallery[i].pack();
-			initGallery[i].resize(true);
-		});
-	});
-
-	gallery.forEach((items, i) => {
-		initGallery[i].on("resize", (size) => {
-			// 'size' is the newly matching size object
-			// ...
-			console.log(size);
+	carousels.forEach((carousel) => {
+		new Flickity(carousel, {
+			accessibility: true,
+			adaptiveHeight: false,
+			autoPlay: false,
+			cellAlign: "center",
+			cellSelector: undefined,
+			contain: true,
+			draggable: ">1",
+			dragThreshold: 3,
+			freeScroll: false,
+			friction: 0.2,
+			groupCells: false,
+			initialIndex: 0,
+			lazyLoad: false,
+			percentPosition: false,
+			prevNextButtons: true,
+			pageDots: true,
+			resize: true,
+			rightToLeft: false,
+			setGallerySize: true,
+			watchCSS: false,
+			wrapAround: true,
+			imagesLoaded: true,
 		});
 	});
 }
