@@ -1,3 +1,11 @@
+[data-theme="dark"] {
+	footer {
+		a {
+			color: #fff;
+		}
+	}
+}
+
 footer {
 	.row {
 		display: flex;
@@ -11,8 +19,9 @@ footer {
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
-		a {
-			padding: 10px;
-		}
+	}
+	a {
+		color: #000;
+		padding: 10px;
 	}
 }

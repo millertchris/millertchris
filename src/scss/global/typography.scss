@@ -23,6 +23,12 @@ p {
 	}
 }
 
+[data-theme="dark"] {
+	a {
+		color: var(--action-color);
+	}
+}
+
 a {
 	color: $action-color;
 	transition: all $base-duration $base-timing;
@@ -46,6 +52,15 @@ blockquote {
 	padding: 0;
 }
 
-.light {
-	color: $medium-gray;
+[data-theme="dark"] {
+	.highlight {
+		color: #000;
+		background: #fff;
+	}
+}
+
+.highlight {
+	color: #fff;
+	background: #000;
+	padding: 2px 10px;
 }

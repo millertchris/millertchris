@@ -20,7 +20,7 @@
 					<div class="row">
 						<div class="col">
 							<h1 class="title">Old Forester</h1>
-							<h2 class="subtitle light">Have a sip.</h2>
+							<h2 class="subtitle">Have a sip.</h2>
 						</div>
 						<div class="col">
 							<div class="image">
@@ -32,13 +32,12 @@
 			</div>
 		</section>
 
-		<section class="block basic-content g-fade-up">
+		<section class="block basic-content fade-up">
 			<div class="wrapper">
 				<div class="row">
 					<div class="col">
-						<h2>A distillery with a <span class="light">splash</span> of bourbon.</h2>
-						<p><span class="light">The task,</span> refresh the site with an emphasis on their distillery, products, and heritage. <span class="light">The challenge,</span> an extremely tight and unforgiving timeline. <span class="light">The result,</span> a beautiful site that highlights all of that.</p>
-						<a href="https://www.oldforester.com/">Visit oldforester.com</a>
+						<h2>A distillery with a <span class="highlight">splash</span> of bourbon.</h2>
+						<p>The task, refresh the site with an emphasis on their distillery, products, and heritage. The challenge, an extremely tight and unforgiving timeline. The result, a beautiful site that highlights all of that.</p>
 					</div>
 				</div>
 			</div>
@@ -47,6 +46,9 @@
 		<section class="block gallery">
 			<div class="wrapper">
 				<div class="row">
+					<div class="col intro">
+						<h2 class="title aligncenter">Work examples.</h2>
+					</div>
 					<div class="col">
 						<div class="carousel">
 							<div class="carousel-cell">
@@ -105,7 +107,63 @@
 			</div>
 		</section>
 
-		<%= require('html-loader!../blocks/cards.html') %>
+		<section class="block basic-content fade-up">
+			<div class="wrapper">
+				<div class="row">
+					<div class="col">
+						<h2>Take a <span class="highlight">gander</span> at their site.</h2>
+						<a href="https://www.oldforester.com/" class="btn type1" target="_blank">Visit oldforester.com</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="block cards style-1">
+			<div class="wrapper">
+				<div class="row">
+					<div class="col intro">
+						<h2 class="title">Other projects.</h2>
+					</div>
+					<div class="col">
+						<div class="items">
+							<div class="item">
+								<a href="#">
+									<div class="image">
+										<img src="https://source.unsplash.com/WLUHO9A_xik/1600x900" alt="Random Unsplash image">
+									</div>
+									<div class="content">
+										<h2 class="title">Lorem, ipsum.</h2>
+										<p class="category">Website</p>
+									</div>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<div class="image">
+										<img src="https://source.unsplash.com/WLUHO9A_xik/1600x900" alt="Random Unsplash image">
+									</div>
+									<div class="content">
+										<h2 class="title">Lorem, ipsum.</h2>
+										<p class="category">Website</p>
+									</div>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<div class="image">
+										<img src="https://source.unsplash.com/WLUHO9A_xik/1600x900" alt="Random Unsplash image">
+									</div>
+									<div class="content">
+										<h2 class="title">Lorem, ipsum.</h2>
+										<p class="category">Website</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<%= require('html-loader!../components/footer.html') %>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>

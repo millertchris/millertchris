@@ -2,19 +2,36 @@ import { gsap, ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function animateScroll() {
-	const fadeIn = gsap.utils.toArray(".g-fade-up");
+	gsap.timeline({
+		scrollTrigger: {
+			trigger: ".gallery",
+			start: "center center",
+			end: () => innerHeight * 4,
+			scrub: true,
+			pin: ".gallery",
+			anticipatePin: 1,
+		},
+	})
+		.set(".gallery", { autoAlpha: 0 })
+		.to(".gallery", { duration: 0.1, autoAlpha: 1 }, 0.001)
+		.from(".gallery", {
+			scale: 3.3333,
+			ease: "none",
+		});
 
-	fadeIn.forEach((box) => {
-		gsap.from(box, {
+	const fadeUp = gsap.utils.toArray(".fade-up");
+
+	fadeUp.forEach((item) => {
+		gsap.from(item, {
 			autoAlpha: 0,
 			y: 200,
 			scrollTrigger: {
-				trigger: box,
-				// pin: true, // pin the trigger element while active
-				start: "top bottom", // when the top of the trigger hits the top of the viewport
-				end: "+=500", // end after scrolling 500px beyond the start
-				markers: true,
-				scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+				trigger: item,
+				pin: false,
+				start: "top bottom",
+				end: "+=500",
+				markers: false,
+				scrub: 1,
 			},
 		});
 	});

@@ -1,27 +1,3 @@
-:root {
-	--primary-color: #302ae6;
-	--secondary-color: #000;
-	--font-color: #424242;
-	--bg-color: #fff;
-	--heading-color: #292922;
-	.fa-adjust {
-		color: #000;
-		transform: rotate(540deg);
-	}
-}
-
-[data-theme="dark"] {
-	--primary-color: #9a97f3;
-	--secondary-color: #fff;
-	--font-color: #e1e1ff;
-	--bg-color: #0b0b0b;
-	--heading-color: #818cab;
-	.fa-adjust {
-		color: #000;
-		transform: rotate(0deg);
-	}
-}
-
 html {
 	// background-color: $viewport-background-color;
 	background-color: var(--bg-color);
@@ -32,9 +8,6 @@ body {
 	margin: 0;
 	background-color: var(--bg-color);
 	color: var(--font-color);
-	// opacity: 0;
-	// transition: opacity 300ms ease-in-out, background-color 300ms ease-in-out,
-	// 	color 300ms ease-in-out;
 }
 
 main {

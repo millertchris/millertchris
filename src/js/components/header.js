@@ -3,9 +3,8 @@ import _ from "lodash";
 export default function header() {
 	// Determine when user scrolls up or down
 	var lastScrollTop = 0;
-	var header = document.querySelector("header");
+	var header = document.getElementById("main-nav");
 
-	// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
 	window.addEventListener(
 		"scroll",
 		_.throttle(function () {
