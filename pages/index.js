@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-import Image from 'next/image';
 import Header from '../components/header';
 import { motion } from 'framer-motion';
 import Canvas from '../components/canvas';

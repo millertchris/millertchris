@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Header from '../components/header';
 import CanvasColor from '../components/canvas-color';
+import Tilt from 'react-parallax-tilt';
 
 const items = [
   { title: 'Old Forester', image: 'old-forester-website.jpeg' },
@@ -153,16 +154,18 @@ export default function Home() {
             <div className='row'>
               {items.map((item, i) => (
                 <div className='item' key={i}>
-                  <div className='image'>
-                    <Image
-                      src={'/images/' + item.image}
-                      alt={item.title + ' website'}
-                      placeholder='blur'
-                      blurDataURL='/images/Progressively-Loading-Images-With-Blur-Effect-min.png'
-                      layout='fill'
-                      objectFit='cover'
-                    />
-                  </div>
+                  <Tilt glareEnable='true'>
+                    <div className='image'>
+                      <Image
+                        src={'/images/' + item.image}
+                        alt={item.title + ' website'}
+                        placeholder='blur'
+                        blurDataURL='/images/Progressively-Loading-Images-With-Blur-Effect-min.png'
+                        layout='fill'
+                        objectFit='cover'
+                      />
+                    </div>
+                  </Tilt>
                   <div className='content'>
                     <h2 className='h6'>{item.title}</h2>
                   </div>

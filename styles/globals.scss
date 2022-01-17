@@ -310,6 +310,10 @@ nav {
 
 .block.portfolio {
   height: 100%;
+
+  .wrapper {
+    max-width: 650px;
+  }
   .row {
     display: grid;
     gap: 20px;
