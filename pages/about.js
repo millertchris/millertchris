@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import Header from '../components/header';
+import CanvasColor from '../components/canvas-color';
 
 export default function Home() {
   return (
@@ -8,6 +9,8 @@ export default function Home() {
         metaTitle='Chris Miller | About'
         metaDescription={`Working with agencies and teams that help brands communicate and connect with the people that love and adore them.`}
       />
+
+      <CanvasColor />
 
       <main>
         <section className='block about'>

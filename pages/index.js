@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Header from '../components/header';
 import { motion } from 'framer-motion';
 import Canvas from '../components/canvas';
+import CanvasColor from '../components/canvas-color';
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
         metaTitle='Chris Miller | Advertising and Web Design'
         metaDescription='Connecting brands with their audience through rich and engaging digital experiences.'
       />
+
+      <CanvasColor />
 
       <main>
         <Canvas />

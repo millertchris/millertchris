@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Header from '../components/header';
+import CanvasColor from '../components/canvas-color';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       />
 
       <main>
+        <CanvasColor />
         <section className='block agency'>
           <div className='wrapper'>
             <div className='row'>
@@ -36,7 +38,7 @@ export default function Home() {
                         duration: 1,
                       }}
                     >
-                      We create immersive
+                      We create interactive
                     </motion.span>
                   </span>
                   <span className='reveal-text'>
@@ -48,7 +50,7 @@ export default function Home() {
                         ease: 'easeInOut',
                       }}
                     >
-                      story telling expereinces.
+                      story telling experiences.
                     </motion.span>
                   </span>
                 </h2>

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Header from '../components/header';
+import CanvasColor from '../components/canvas-color';
 
 const items = [
   { title: 'Old Forester', image: 'old-forester-website.jpeg' },
@@ -70,6 +71,8 @@ export default function Home() {
         metaTitle='Chris Miller | Portfolio'
         metaDescription={`Projects I've scoped, created, and delivered over the years.`}
       />
+
+      <CanvasColor />
 
       <main>
         <section className='block agency'>

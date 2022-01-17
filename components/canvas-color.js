@@ -1,0 +1,18 @@
+import React, { useRef, useEffect } from 'react';
+import ColorPop from './color-pop';
+
+const CanvasColor = (props) => {
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
+    // const canvas = canvasRef.current;
+    // Paper.setup(canvas);
+    // draw();
+
+    ColorPop();
+  }, []);
+
+  return <canvas ref={canvasRef} {...props} id='c' resize='true' />;
+};
+
+export default CanvasColor;
