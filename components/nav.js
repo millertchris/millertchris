@@ -71,16 +71,17 @@ export default function Nav() {
       >
         <ul>
           {menuItems.map((item, i) => (
-            <motion.li
-              key={i}
-              variants={menuItemVariants}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
+            <li className='reveal-text' key={i}>
               <Link href={item.url}>
-                <a>{item.text}</a>
+                <motion.a
+                  variants={menuItemVariants}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {item.text}
+                </motion.a>
               </Link>
-            </motion.li>
+            </li>
           ))}
         </ul>
       </motion.nav>

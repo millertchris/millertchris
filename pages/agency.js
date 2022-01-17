@@ -15,7 +15,7 @@ export default function Home() {
           <div className='wrapper'>
             <div className='row'>
               <div className='col'>
-                <h1 className='label black-bar'>
+                <h1 className='label reveal-text'>
                   <motion.span
                     initial={{ y: 60 }}
                     animate={{ y: 0 }}
@@ -28,7 +28,7 @@ export default function Home() {
                   </motion.span>
                 </h1>
                 <h2 className='h1'>
-                  <span className='black-bar'>
+                  <span className='reveal-text'>
                     <motion.span
                       initial={{ y: 60 }}
                       animate={{ y: 0 }}
@@ -39,7 +39,7 @@ export default function Home() {
                       We create immersive
                     </motion.span>
                   </span>
-                  <span className='black-bar'>
+                  <span className='reveal-text'>
                     <motion.span
                       initial={{ y: 60 }}
                       animate={{ y: 0 }}

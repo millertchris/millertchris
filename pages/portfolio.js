@@ -76,7 +76,7 @@ export default function Home() {
           <div className='wrapper'>
             <div className='row'>
               <div className='col'>
-                <h1 className='label black-bar'>
+                <h1 className='label reveal-text'>
                   <motion.span
                     initial={{ y: 60 }}
                     animate={{ y: 0 }}
@@ -90,7 +90,7 @@ export default function Home() {
                 </h1>
 
                 <h2 className='h1'>
-                  <span className='black-bar'>
+                  <span className='reveal-text'>
                     <motion.span
                       initial={{ y: 60 }}
                       animate={{ y: 0 }}
@@ -101,7 +101,7 @@ export default function Home() {
                       Passionate teams deliver
                     </motion.span>
                   </span>
-                  <span className='black-bar'>
+                  <span className='reveal-text'>
                     <motion.span
                       initial={{ y: 60 }}
                       animate={{ y: 0 }}

@@ -28,7 +28,7 @@ export default function Home() {
                   Chris Miller
                 </motion.h1>
 
-                <h2 className='h1 black-bar'>
+                <h2 className='h1 reveal-text'>
                   <motion.span
                     initial={{ y: 60 }}
                     animate={{ y: 0 }}
@@ -41,7 +41,7 @@ export default function Home() {
                   </motion.span>
                 </h2>
 
-                <p className='black-bar'>
+                <p className='reveal-text'>
                   <motion.span
                     initial={{ y: 150 }}
                     animate={{ y: 0 }}
