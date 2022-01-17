@@ -43,7 +43,7 @@ export default function Home() {
 
                 <p className='black-bar'>
                   <motion.span
-                    initial={{ y: 80 }}
+                    initial={{ y: 150 }}
                     animate={{ y: 0 }}
                     transition={{ duration: 1, delay: 0.25 }}
                   >
