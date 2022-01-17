@@ -107,7 +107,7 @@ export default function Home() {
                     inform and empower others that may not otherwise have access
                     to these resources.
                   </p>
-                  <ul class='social'>
+                  <ul className='social'>
                     <li>
                       <a
                         href='https://twitter.com/millertchris'
@@ -118,7 +118,7 @@ export default function Home() {
                           focusable='false'
                           data-prefix='fab'
                           data-icon='twitter'
-                          class='svg-inline--fa fa-twitter fa-w-16'
+                          className='svg-inline--fa fa-twitter fa-w-16'
                           role='img'
                           xmlns='http://www.w3.org/2000/svg'
                           viewBox='0 0 512 512'
@@ -140,7 +140,7 @@ export default function Home() {
                           focusable='false'
                           data-prefix='fab'
                           data-icon='linkedin-in'
-                          class='svg-inline--fa fa-linkedin-in fa-w-14'
+                          className='svg-inline--fa fa-linkedin-in fa-w-14'
                           role='img'
                           xmlns='http://www.w3.org/2000/svg'
                           viewBox='0 0 448 512'
@@ -153,13 +153,16 @@ export default function Home() {
                       </a>
                     </li>
                     <li>
-                      <a href='https://www.youtube.com/millertchris'>
+                      <a
+                        href='https://www.youtube.com/millertchris'
+                        target='_blank'
+                      >
                         <svg
                           aria-hidden='true'
                           focusable='false'
                           data-prefix='fab'
                           data-icon='youtube'
-                          class='svg-inline--fa fa-youtube fa-w-18'
+                          className='svg-inline--fa fa-youtube fa-w-18'
                           role='img'
                           xmlns='http://www.w3.org/2000/svg'
                           viewBox='0 0 576 512'

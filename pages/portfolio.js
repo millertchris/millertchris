@@ -39,10 +39,10 @@ const items = [
     title: 'National Travel Association',
     image: 'national-travel-association-website.png',
   },
-  {
-    title: 'International Coaching Federation',
-    image: 'old-forester-website.jpeg',
-  },
+  // {
+  //   title: 'International Coaching Federation',
+  //   image: 'old-forester-website.jpeg',
+  // },
   { title: 'Gravely', image: 'gravely-brewing-website.png' },
   { title: 'Flavorman', image: 'flavorman-website.png' },
   {
@@ -124,7 +124,7 @@ export default function Home() {
                   }}
                 >
                   <p>
-                    Over the years — I've had the privilege to partner with
+                    Over the years — I&apos;ve had the privilege to partner with
                     other agencies and clients who care deeply about creating
                     rich and engaging experieneces.
                   </p>

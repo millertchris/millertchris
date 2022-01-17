@@ -79,11 +79,7 @@ export default function Home() {
                     digital agency like us, then let’s find a way to work —
                     together.
                   </p>
-                  <a
-                    href='https://prolificdigital.com'
-                    className='btn'
-                    target='_blank'
-                  >
+                  <a href='https://prolificdigital.com' className='btn'>
                     Visit our site
                   </a>
                 </motion.div>
