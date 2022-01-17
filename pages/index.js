@@ -1,4 +1,5 @@
 import Header from '../components/header';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Canvas from '../components/canvas';
 import CanvasColor from '../components/canvas-color';
@@ -54,6 +55,17 @@ export default function Home() {
                     earn the trust of many.
                   </motion.span>
                 </p>
+                <div className='reveal-text'>
+                  <Link href='/portfolio'>
+                    <motion.a
+                      initial={{ y: 20 }}
+                      animate={{ y: 0 }}
+                      transition={{ duration: 1, delay: 6 }}
+                    >
+                      View portfolio
+                    </motion.a>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

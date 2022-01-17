@@ -5,10 +5,6 @@ const CanvasColor = (props) => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
-    // const canvas = canvasRef.current;
-    // Paper.setup(canvas);
-    // draw();
-
     ColorPop();
   }, []);
 

@@ -5,12 +5,12 @@ const ColorPop = () => {
   var ctx = c.getContext('2d');
   var cH;
   var cW;
-  var bgColor = '#2980B9';
+  var bgColor = '#282741';
   var animations = [];
   var circles = [];
 
   var colorPicker = (function () {
-    var colors = ['#2980B9', '#282741', '#FF6138'];
+    var colors = ['#282741', '#2980B9', '#FF6138'];
     var index = 0;
     function next() {
       index = index++ < colors.length - 1 ? index : 0;
@@ -178,7 +178,7 @@ const ColorPop = () => {
     if (!!window.location.pathname.match(/fullcpgrid/)) {
       startFauxClicking();
     }
-    handleInactiveUser();
+    // handleInactiveUser();
   })();
 
   function handleInactiveUser() {
