@@ -9,16 +9,16 @@ const menuItems = [
     text: 'Home',
   },
   {
-    url: '/agency',
-    text: 'Agency',
-  },
-  {
     url: '/portfolio',
     text: 'Portfolio',
   },
   {
     url: '/about',
     text: 'About',
+  },
+  {
+    url: '/agency',
+    text: 'Agency',
   },
 ];
 
