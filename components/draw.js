@@ -22,4 +22,4 @@ const draw = () => {
   Paper.view.draw();
 };
 
-export default draw1;
+export default draw;
