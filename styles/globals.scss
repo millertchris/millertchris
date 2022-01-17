@@ -180,7 +180,7 @@ nav {
 
 .block {
   width: 100%;
-  padding: 20px;
+  margin-bottom: 40px;
 }
 
 .content {
@@ -299,23 +299,16 @@ nav {
 }
 
 .block.portfolio {
-  display: flex;
   height: 100%;
-  padding: 20px 0;
   .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
     gap: 20px;
-  }
-  .item {
-    width: 380px;
   }
   .image {
     position: relative;
     padding-top: 56.25%;
     margin-bottom: 20px;
+    width: 100%;
   }
 }
 
