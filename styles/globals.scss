@@ -133,10 +133,14 @@ img {
   overflow: hidden;
 }
 
-.demo {
-  width: 200px;
-  height: 200px;
-  background-color: $white;
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  cursor: url('/pencil-alt-solid.svg') 0 20, auto;
 }
 
 main {
@@ -264,7 +268,7 @@ nav {
 
 .block.hero {
   position: relative;
-
+  pointer-events: none;
   .wrapper {
     max-width: 650px;
   }

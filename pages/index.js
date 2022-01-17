@@ -1,6 +1,8 @@
+import { useEffect } from 'react';
 import Image from 'next/image';
 import Header from '../components/header';
 import { motion } from 'framer-motion';
+import Canvas from '../components/canvas';
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       />
 
       <main>
+        <Canvas />
+
         <section className='block hero'>
           <div className='wrapper'>
             <div className='row'>
