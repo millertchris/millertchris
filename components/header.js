@@ -60,6 +60,11 @@ export default function Header(props) {
         <meta name='theme-color' content='#ffffff' />
 
         <script
+          async
+          src='https://www.googletagmanager.com/gtag/js?id=G-J24C9431J7'
+        />
+
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
