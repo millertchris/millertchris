@@ -16,7 +16,7 @@ export default function Header(props) {
         <meta property='og:description' content={props.metaDescription} />
         <meta
           property='og:image'
-          content={`process.env.VERCEL_URL + /social/millertchris-twitter-meta-image.png`}
+          content={`${process.env.VERCEL_URL} + "/social/millertchris-twitter-meta-image.png"`}
         />
 
         <meta property='twitter:card' content='summary_large_image' />
@@ -25,7 +25,7 @@ export default function Header(props) {
         <meta property='twitter:description' content={props.metaDescription} />
         <meta
           property='twitter:image'
-          content={`process.env.VERCEL_URL + /social/millertchris-twitter-meta-image.png`}
+          content={`${process.env.VERCEL_URL} + "/social/millertchris-twitter-meta-image.png"`}
         />
 
         <link
