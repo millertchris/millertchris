@@ -7,7 +7,26 @@ export default function Header(props) {
     <>
       <Head>
         <title>{props.metaTitle}</title>
+        <meta name='title' content={props.metaTitle} />
         <meta name='description' content={props.metaDescription} />
+
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://millertchris.com/' />
+        <meta property='og:title' content={props.metaTitle} />
+        <meta property='og:description' content={props.metaDescription} />
+        <meta
+          property='og:image'
+          content='/social/millertchris-twitter-meta-image.png'
+        />
+
+        <meta property='twitter:card' content='summary_large_image' />
+        <meta property='twitter:url' content='https://millertchris.com/' />
+        <meta property='twitter:title' content={props.metaTitle} />
+        <meta property='twitter:description' content={props.metaDescription} />
+        <meta
+          property='twitter:image'
+          content='/social/millertchris-twitter-meta-image.png'
+        />
 
         <link
           rel='apple-touch-icon'
