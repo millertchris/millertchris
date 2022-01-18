@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Header
-        metaTitle='Chris Miller | Advertising and Web Design'
+        metaTitle='Chris Miller | Web Design'
         metaDescription='Connecting brands with their audience through rich and engaging digital experiences.'
       />
 
