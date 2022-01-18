@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Header from '../components/header';
-import CanvasColor from '../components/canvas-color';
 import Tilt from 'react-parallax-tilt';
 
 const items = [
@@ -72,10 +71,6 @@ export default function Home() {
         metaTitle='Chris Miller | Portfolio'
         metaDescription={`Projects I've scoped, created, and delivered over the years.`}
       />
-
-      <motion.div exit={{ opacity: 0 }}>
-        <CanvasColor />
-      </motion.div>
 
       <motion.main exit={{ opacity: 0 }}>
         <section className='block agency'>

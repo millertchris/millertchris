@@ -1,11 +1,15 @@
 import '../styles/globals.scss';
 import { AnimatePresence } from 'framer-motion';
+import CanvasColor from '../components/canvas-color';
 
 function MyApp({ Component, pageProps, router }) {
   return (
-    <AnimatePresence>
-      <Component key={router.route} {...pageProps} />
-    </AnimatePresence>
+    <>
+      <CanvasColor />
+      <AnimatePresence>
+        <Component key={router.route} {...pageProps} />
+      </AnimatePresence>
+    </>
   );
 }
 

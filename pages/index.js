@@ -12,10 +12,6 @@ export default function Home() {
         metaDescription='Connecting brands with their audience through rich and engaging digital experiences.'
       />
 
-      <motion.div exit={{ opacity: 0 }}>
-        <CanvasColor />
-      </motion.div>
-
       <motion.main exit={{ opacity: 0 }}>
         <Canvas />
 

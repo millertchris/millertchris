@@ -1,6 +1,6 @@
 import anime from 'animejs/lib/anime';
 
-const ColorPop = () => {
+const ColorPop = (canvas) => {
   var c = document.getElementById('c');
   var ctx = c.getContext('2d');
   var cH;

@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import Header from '../components/header';
-import CanvasColor from '../components/canvas-color';
 import Link from 'next/link';
 
 export default function About() {
@@ -10,10 +9,6 @@ export default function About() {
         metaTitle='Chris Miller | About'
         metaDescription={`Working with agencies and teams that help brands communicate and connect with the people that love and adore them.`}
       />
-
-      <motion.div exit={{ opacity: 0 }}>
-        <CanvasColor />
-      </motion.div>
 
       <motion.main exit={{ opacity: 0 }}>
         <section className='block about'>

@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Header from '../components/header';
-import CanvasColor from '../components/canvas-color';
 
 export default function Home() {
   return (
@@ -10,10 +9,6 @@ export default function Home() {
         metaTitle='Chris Miller | Agency'
         metaDescription='Prolific Digital is a creative digital agency that specializes in web design.'
       />
-
-      <motion.div exit={{ opacity: 0 }}>
-        <CanvasColor />
-      </motion.div>
 
       <motion.main exit={{ opacity: 0 }}>
         <section className='block agency'>
@@ -85,7 +80,7 @@ export default function Home() {
                     together.
                   </p>
                   <a href='https://prolificdigital.com' className='btn'>
-                    Visit our site
+                    Visit our agency
                   </a>
                 </motion.div>
               </div>
