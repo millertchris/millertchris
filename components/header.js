@@ -58,6 +58,17 @@ export default function Header(props) {
           content='/favicons/browserconfig.xml'
         />
         <meta name='theme-color' content='#ffffff' />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-J24C9431J7', { page_path: window.location.pathname });
+            `,
+          }}
+        />
       </Head>
 
       <Nav />
