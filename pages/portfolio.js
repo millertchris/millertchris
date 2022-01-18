@@ -73,9 +73,11 @@ export default function Home() {
         metaDescription={`Projects I've scoped, created, and delivered over the years.`}
       />
 
-      <CanvasColor />
+      <motion.div exit={{ opacity: 0 }}>
+        <CanvasColor />
+      </motion.div>
 
-      <main>
+      <motion.main exit={{ opacity: 0 }}>
         <section className='block agency'>
           <div className='wrapper'>
             <div className='row'>
@@ -132,7 +134,7 @@ export default function Home() {
                     other agencies and clients who care deeply about creating
                     rich and engaging experieneces.
                   </p>
-                  <Link href='/agency'>
+                  <Link href='/about'>
                     <a className='btn'>Learn more</a>
                   </Link>
                 </motion.div>
@@ -174,7 +176,7 @@ export default function Home() {
             </div>
           </div>
         </motion.section>
-      </main>
+      </motion.main>
 
       <footer></footer>
     </>

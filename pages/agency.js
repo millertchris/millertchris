@@ -11,8 +11,11 @@ export default function Home() {
         metaDescription='Prolific Digital is a creative digital agency that specializes in web design.'
       />
 
-      <main>
+      <motion.div exit={{ opacity: 0 }}>
         <CanvasColor />
+      </motion.div>
+
+      <motion.main exit={{ opacity: 0 }}>
         <section className='block agency'>
           <div className='wrapper'>
             <div className='row'>
@@ -89,7 +92,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
+      </motion.main>
 
       <footer></footer>
     </>

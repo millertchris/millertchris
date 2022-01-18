@@ -12,9 +12,11 @@ export default function Home() {
         metaDescription='Connecting brands with their audience through rich and engaging digital experiences.'
       />
 
-      <CanvasColor />
+      <motion.div exit={{ opacity: 0 }}>
+        <CanvasColor />
+      </motion.div>
 
-      <main>
+      <motion.main exit={{ opacity: 0 }}>
         <Canvas />
 
         <section className='block hero'>
@@ -70,7 +72,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
+      </motion.main>
       <footer></footer>
     </>
   );

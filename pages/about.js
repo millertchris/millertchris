@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
 import Header from '../components/header';
 import CanvasColor from '../components/canvas-color';
+import Link from 'next/link';
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <Header
@@ -10,9 +11,11 @@ export default function Home() {
         metaDescription={`Working with agencies and teams that help brands communicate and connect with the people that love and adore them.`}
       />
 
-      <CanvasColor />
+      <motion.div exit={{ opacity: 0 }}>
+        <CanvasColor />
+      </motion.div>
 
-      <main>
+      <motion.main exit={{ opacity: 0 }}>
         <section className='block about'>
           <div className='wrapper'>
             <div className='row'>
@@ -178,15 +181,19 @@ export default function Home() {
                       </a>
                     </li>
                   </ul>
-                  <a href='https://prolificdigital.com' className='btn'>
-                    Visit Prolific Digital
+
+                  <Link href='/agency'>
+                    <a className='btn'>See agency</a>
+                  </Link>
+                  <a href='mailto:chris@prolificdigital.com' className='btn'>
+                    Email me
                   </a>
                 </motion.div>
               </div>
             </div>
           </div>
         </section>
-      </main>
+      </motion.main>
 
       <footer></footer>
     </>

@@ -126,6 +126,17 @@ img {
   margin: auto;
 }
 
+.splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  z-index: 20;
+  pointer-events: none;
+}
+
 #__next {
   position: relative;
   width: 100vw;

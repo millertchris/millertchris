@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Nav from './nav';
+import { motion } from 'framer-motion';
 
 export default function Header(props) {
   return (
