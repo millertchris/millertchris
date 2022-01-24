@@ -10,6 +10,11 @@ const items = [
     image: 'old-forester-website.jpeg',
     url: 'https://www.oldforester.com/',
   },
+  {
+    title: 'Zoom',
+    image: 'zoom-diversity-and-inclusion-website.png',
+    url: 'https://zoom.prolificdigital.com/',
+  },
   { title: 'Buckhead', image: 'buckheads-website.png' },
   {
     title: 'Southern Comfort',
